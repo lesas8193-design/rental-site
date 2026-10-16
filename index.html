@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПрокатТех — аренда инструмента и оборудования</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">ПрокатТех</div>
+        <nav class="nav">
+            <a href="#catalog">Каталог</a>
+            <a href="#order">Оставить заявку</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Аренда инструмента и оборудования</h1>
+        <p>Перфораторы, шуруповёрты, бетономешалки — от 400 ₽ в день. Доставим и подскажем, что подойдёт под задачу.</p>
+        <a href="#catalog" class="hero-btn">Смотреть каталог</a>
+    </section>
+
+    <h2 id="catalog">Наши предложения</h2>
+
+    <div class="catalog">
+        <div class="card" data-id="1" data-name="Перфоратор" data-price="800">
+            <h3>Перфоратор</h3>
+            <p>Мощный инструмент для сверления бетона и кирпича. В комплекте буры и кейс.</p>
+            <p class="price">800 ₽ / день</p>
+            <button class="add-btn">Добавить в заявку</button>
+        </div>
+
+        <div class="card" data-id="2" data-name="Шуруповёрт" data-price="400">
+            <h3>Шуруповёрт</h3>
+            <p>Аккумуляторный, два режима работы. Подходит для сборки мебели и монтажа.</p>
+            <p class="price">400 ₽ / день</p>
+            <button class="add-btn">Добавить в заявку</button>
+        </div>
+
+        <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
+            <h3>Бетономешалка</h3>
+            <p>Объём 140 литров. Для замеса раствора на стройплощадке и в частном доме.</p>
+            <p class="price">1200 ₽ / день</p>
+            <button class="add-btn">Добавить в заявку</button>
+        </div>
+    </div>
+
+    <h2>Ваша заявка</h2>
+
+    <div class="order">
+        <div id="cart-empty">Пока ничего не выбрано.</div>
+        <ul id="cart-list"></ul>
+        <div id="cart-total"></div>
+    </div>
+
+    <h2 id="order">Оформить заявку</h2>
+
+    <form id="order-form" class="order">
+        <label>Ваше имя
+            <input type="text" name="name" required>
+        </label>
+
+        <label>Телефон
+            <input type="tel" name="phone" required>
+        </label>
+
+        <label>Дата начала аренды
+            <input type="date" name="date_from" required>
+        </label>
+
+        <label>Дата окончания аренды
+            <input type="date" name="date_to" required>
+        </label>
+
+        <label>Комментарий
+            <textarea name="comment" rows="3"></textarea>
+        </label>
+
+        <button type="submit">Отправить заявку</button>
+        <div id="form-status"></div>
+    </form>
+
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (900) 000-00-00</p>
+        <p>Telegram: @your_username</p>
+        <p>Адрес: г. Москва, ул. Примерная, 1</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
