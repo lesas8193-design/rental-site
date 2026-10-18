@@ -26,40 +26,44 @@
     </header>
 
     <!-- Первый экран (Hero) -->
-    <section class="hero">
+    <section class="hero reveal">
         <div class="hero-content">
             <h1>Аренда инструмента для стройки без лишних затрат</h1>
             <p>Профессиональное оборудование для ваших задач. Доставим на объект и поможем с выбором. Без скрытых платежей.</p>
             <a href="#catalog" class="hero-btn">Выбрать оборудование</a>
         </div>
-        <!-- Фоновое изображение для Hero задается в CSS, чтобы не грузить HTML -->
     </section>
 
     <!-- Блок преимуществ -->
-    <section class="features">
+    <section class="features reveal">
         <div class="feature-item">
+            <div class="feature-icon">🚚</div>
             <h3>Доставка на объект</h3>
             <p>Привезем инструмент прямо к месту работы. *Демонстрационное преимущество</p>
         </div>
         <div class="feature-item">
+            <div class="feature-icon">🛠️</div>
             <h3>Проверенное качество</h3>
             <p>Вся техника проходит регулярное ТО перед выдачей. *Демонстрационное преимущество</p>
         </div>
         <div class="feature-item">
+            <div class="feature-icon">📅</div>
             <h3>Гибкие сроки</h3>
             <p>Арендуйте от одного дня до нескольких месяцев. *Демонстрационное преимущество</p>
         </div>
     </section>
 
     <!-- Каталог -->
-    <section id="catalog" class="catalog-section">
+    <section id="catalog" class="catalog-section reveal">
         <h2>Наш каталог</h2>
         <p class="subtitle">Вся техника в отличном состоянии и готова к работе</p>
         
         <div class="catalog">
-            <!-- Товары (оставил все 8, картинки подобраны в едином стиле) -->
+            <!-- Товар 1 -->
             <div class="card" data-id="1" data-name="Перфоратор Bosch" data-price="800">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Перфоратор Bosch</h3>
                     <p>Мощный инструмент для бетона. В комплекте буры и кейс.</p>
@@ -70,8 +74,11 @@
                 </div>
             </div>
 
+            <!-- Товар 2 -->
             <div class="card" data-id="2" data-name="Шуруповёрт Makita" data-price="400">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Шуруповёрт Makita</h3>
                     <p>Аккумуляторный, два режима. Для сборки мебели и монтажа.</p>
@@ -82,8 +89,11 @@
                 </div>
             </div>
 
+            <!-- Товар 3 -->
             <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Бетономешалка</h3>
                     <p>Объём 140 литров. Для замеса раствора на стройплощадке.</p>
@@ -94,8 +104,11 @@
                 </div>
             </div>
 
+            <!-- Товар 4 -->
             <div class="card" data-id="4" data-name="Отбойный молоток" data-price="1500">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Отбойный молоток</h3>
                     <p>Электрический. Для демонтажа стен и старой плитки.</p>
@@ -106,8 +119,11 @@
                 </div>
             </div>
 
+            <!-- Товар 5 -->
             <div class="card" data-id="5" data-name="УШМ (Болгарка)" data-price="500">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>УШМ (Болгарка)</h3>
                     <p>Диск 230 мм. Для резки металла и шлифовки поверхностей.</p>
@@ -118,8 +134,11 @@
                 </div>
             </div>
 
+            <!-- Товар 6 -->
             <div class="card" data-id="6" data-name="Плиткорез" data-price="700">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Плиткорез</h3>
                     <p>Ручной, 800 мм. Ровный рез керамической плитки.</p>
@@ -130,8 +149,11 @@
                 </div>
             </div>
 
+            <!-- Товар 7 -->
             <div class="card" data-id="7" data-name="Лазерный уровень" data-price="600">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Лазерный уровень</h3>
                     <p>Построение плоскостей 360°. Идеален для плитки.</p>
@@ -142,8 +164,11 @@
                 </div>
             </div>
 
+            <!-- Товар 8 -->
             <div class="card" data-id="8" data-name="Компрессор" data-price="900">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-img-wrapper">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
+                </div>
                 <div class="card-body">
                     <h3>Компрессор</h3>
                     <p>50 литров. Для работы с краскопультом.</p>
@@ -157,7 +182,7 @@
     </section>
 
     <!-- Как это работает -->
-    <section id="how" class="how-it-works">
+    <section id="how" class="how-it-works reveal">
         <h2>Как это работает</h2>
         <div class="steps">
             <div class="step">
@@ -179,7 +204,7 @@
     </section>
 
     <!-- Заявка и Форма -->
-    <section id="order" class="order-section">
+    <section id="order" class="order-section reveal">
         <h2>Оформление заявки</h2>
         
         <div class="order-container">
@@ -216,7 +241,7 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="faq-section">
+    <section id="faq" class="faq-section reveal">
         <h2>Условия аренды и вопросы</h2>
         <div class="faq-item">
             <h3>Нужен ли залог?</h3>
