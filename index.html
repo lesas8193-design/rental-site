@@ -3,91 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПрокатТех — аренда инструмента и оборудования</title>
+    <title>ПрокатТех — аренда инструмента</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем красивый шрифт от Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка -->
     <header class="site-header">
-        <div class="logo">ПрокатТех</div>
-        <nav class="nav">
-            <a href="#catalog">Каталог</a>
-            <a href="#order">Оставить заявку</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
+        <div class="logo">Прокат<span>Тех</span></div>
+        <div class="header-contact">
+            <span>Звоните с 9:00 до 21:00</span>
+            <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+        </div>
     </header>
 
+    <!-- Главный экран (Hero) -->
     <section class="hero">
-        <h1>Аренда инструмента и оборудования</h1>
-        <p>Перфораторы, шуруповёрты, бетономешалки — от 400 ₽ в день. Доставим и подскажем, что подойдёт под задачу.</p>
-        <a href="#catalog" class="hero-btn">Смотреть каталог</a>
+        <div class="hero-content">
+            <h1>Инструмент для ваших задач</h1>
+            <p>Аренда профессионального оборудования без переплат. Доставим на объект и поможем с выбором.</p>
+            <a href="#catalog" class="hero-btn">Выбрать инструмент</a>
+        </div>
     </section>
 
-    <h2 id="catalog">Наши предложения</h2>
+    <!-- Каталог -->
+    <section id="catalog" class="catalog-section">
+        <h2>Наш каталог</h2>
+        <p class="subtitle">Вся техника в отличном состоянии и готова к работе</p>
+        
+        <div class="catalog">
+            <!-- Карточка 1 -->
+            <div class="card" data-id="1" data-name="Перфоратор Bosch" data-price="800">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Перфоратор Bosch</h3>
+                    <p>Мощный инструмент для бетона. В комплекте буры и кейс.</p>
+                    <div class="card-bottom">
+                        <span class="price">800 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
 
-    <div class="catalog">
-        <div class="card" data-id="1" data-name="Перфоратор" data-price="800">
-            <h3>Перфоратор</h3>
-            <p>Мощный инструмент для сверления бетона и кирпича. В комплекте буры и кейс.</p>
-            <p class="price">800 ₽ / день</p>
-            <button class="add-btn">Добавить в заявку</button>
+            <!-- Карточка 2 -->
+            <div class="card" data-id="2" data-name="Шуруповёрт Makita" data-price="400">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Шуруповёрт Makita</h3>
+                    <p>Аккумуляторный, два режима. Для сборки мебели и монтажа.</p>
+                    <div class="card-bottom">
+                        <span class="price">400 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Бетономешалка</h3>
+                    <p>Объём 140 литров. Для замеса раствора на стройплощадке.</p>
+                    <div class="card-bottom">
+                        <span class="price">1200 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card" data-id="4" data-name="Отбойный молоток" data-price="1500">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Отбойный молоток</h3>
+                    <p>Электрический. Для демонтажа стен и старой плитки.</p>
+                    <div class="card-bottom">
+                        <span class="price">1500 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="card" data-id="5" data-name="УШМ (Болгарка)" data-price="500">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>УШМ (Болгарка)</h3>
+                    <p>Диск 230 мм. Для резки металла и шлифовки поверхностей.</p>
+                    <div class="card-bottom">
+                        <span class="price">500 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="card" data-id="6" data-name="Плиткорез" data-price="700">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Плиткорез</h3>
+                    <p>Ручной, 800 мм. Ровный рез керамической плитки и керамогранита.</p>
+                    <div class="card-bottom">
+                        <span class="price">700 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="card" data-id="7" data-name="Лазерный уровень" data-price="600">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Лазерный уровень</h3>
+                    <p>Построение плоскостей 360°. Идеален для плитки и гипсокартона.</p>
+                    <div class="card-bottom">
+                        <span class="price">600 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="card" data-id="8" data-name="Компрессор" data-price="900">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                    <h3>Компрессор</h3>
+                    <p>50 литров. Для работы с краскопультом и пневмоинструментом.</p>
+                    <div class="card-bottom">
+                        <span class="price">900 ₽ / день</span>
+                        <button class="add-btn">В заявку</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="card" data-id="2" data-name="Шуруповёрт" data-price="400">
-            <h3>Шуруповёрт</h3>
-            <p>Аккумуляторный, два режима работы. Подходит для сборки мебели и монтажа.</p>
-            <p class="price">400 ₽ / день</p>
-            <button class="add-btn">Добавить в заявку</button>
-        </div>
-
-        <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
-            <h3>Бетономешалка</h3>
-            <p>Объём 140 литров. Для замеса раствора на стройплощадке и в частном доме.</p>
-            <p class="price">1200 ₽ / день</p>
-            <button class="add-btn">Добавить в заявку</button>
-        </div>
-    </div>
-
-    <h2>Ваша заявка</h2>
-
-    <div class="order">
-        <div id="cart-empty">Пока ничего не выбрано.</div>
-        <ul id="cart-list"></ul>
-        <div id="cart-total"></div>
-    </div>
-
-    <h2 id="order">Оформить заявку</h2>
-
-    <form id="order-form" class="order">
-        <label>Ваше имя
-            <input type="text" name="name" required>
-        </label>
-
-        <label>Телефон
-            <input type="tel" name="phone" required>
-        </label>
-
-        <label>Дата начала аренды
-            <input type="date" name="date_from" required>
-        </label>
-
-        <label>Дата окончания аренды
-            <input type="date" name="date_to" required>
-        </label>
-
-        <label>Комментарий
-            <textarea name="comment" rows="3"></textarea>
-        </label>
-
-        <button type="submit">Отправить заявку</button>
-        <div id="form-status"></div>
-    </form>
-
-    <section id="contacts" class="contacts">
-        <h2>Контакты</h2>
-        <p>Телефон: +7 (900) 000-00-00</p>
-        <p>Telegram: @your_username</p>
-        <p>Адрес: г. Москва, ул. Примерная, 1</p>
     </section>
+
+    <!-- Заявка и Форма -->
+    <section id="order" class="order-section">
+        <h2>Оформление заявки</h2>
+        
+        <div class="order-container">
+            <!-- Корзина -->
+            <div class="order-cart">
+                <h3>Выбранный инструмент</h3>
+                <div id="cart-empty">Вы пока ничего не выбрали.</div>
+                <ul id="cart-list"></ul>
+                <div id="cart-total"></div>
+            </div>
+
+            <!-- Форма -->
+            <form id="order-form" class="order-form">
+                <h3>Ваши контакты</h3>
+                
+                <label>Ваше имя
+                    <input type="text" name="name" placeholder="Иван Иванов" required>
+                </label>
+
+                <label>Телефон
+                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required>
+                </label>
+
+                <div class="form-row">
+                    <label>Дата начала
+                        <input type="date" name="date_from" required>
+                    </label>
+                    <label>Дата окончания
+                        <input type="date" name="date_to" required>
+                    </label>
+                </div>
+
+                <label>Комментарий (необязательно)
+                    <textarea name="comment" rows="2" placeholder="Адрес доставки или пожелания..."></textarea>
+                </label>
+
+                <button type="submit">Отправить заявку</button>
+                <div id="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo">Прокат<span>Тех</span></div>
+                <p>Профессиональный инструмент в аренду.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>Телефон: +7 (900) 000-00-00</p>
+                <p>Telegram: @your_username</p>
+            </div>
+            <div class="footer-col">
+                <h4>Адрес</h4>
+                <p>г. Москва, ул. Примерная, 1</p>
+                <p>Ежедневно с 9:00 до 21:00</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
