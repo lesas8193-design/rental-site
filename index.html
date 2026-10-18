@@ -3,29 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПрокатТех — аренда инструмента</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Подключаем красивый шрифт от Google -->
+    <title>ПрокатТех — аренда инструмента для стройки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Шапка -->
     <header class="site-header">
         <div class="logo">Прокат<span>Тех</span></div>
+        <nav class="main-nav">
+            <a href="#catalog">Каталог</a>
+            <a href="#how">Как это работает</a>
+            <a href="#faq">Вопросы</a>
+        </nav>
         <div class="header-contact">
             <span>Звоните с 9:00 до 21:00</span>
             <a href="tel:+79000000000">+7 (900) 000-00-00</a>
         </div>
     </header>
 
-    <!-- Главный экран (Hero) -->
+    <!-- Первый экран (Hero) -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Инструмент для ваших задач</h1>
-            <p>Аренда профессионального оборудования без переплат. Доставим на объект и поможем с выбором.</p>
-            <a href="#catalog" class="hero-btn">Выбрать инструмент</a>
+            <h1>Аренда инструмента для стройки без лишних затрат</h1>
+            <p>Профессиональное оборудование для ваших задач. Доставим на объект и поможем с выбором. Без скрытых платежей.</p>
+            <a href="#catalog" class="hero-btn">Выбрать оборудование</a>
+        </div>
+        <!-- Фоновое изображение для Hero задается в CSS, чтобы не грузить HTML -->
+    </section>
+
+    <!-- Блок преимуществ -->
+    <section class="features">
+        <div class="feature-item">
+            <h3>Доставка на объект</h3>
+            <p>Привезем инструмент прямо к месту работы. *Демонстрационное преимущество</p>
+        </div>
+        <div class="feature-item">
+            <h3>Проверенное качество</h3>
+            <p>Вся техника проходит регулярное ТО перед выдачей. *Демонстрационное преимущество</p>
+        </div>
+        <div class="feature-item">
+            <h3>Гибкие сроки</h3>
+            <p>Арендуйте от одного дня до нескольких месяцев. *Демонстрационное преимущество</p>
         </div>
     </section>
 
@@ -35,7 +57,7 @@
         <p class="subtitle">Вся техника в отличном состоянии и готова к работе</p>
         
         <div class="catalog">
-            <!-- Карточка 1 -->
+            <!-- Товары (оставил все 8, картинки подобраны в едином стиле) -->
             <div class="card" data-id="1" data-name="Перфоратор Bosch" data-price="800">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
@@ -48,7 +70,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 2 -->
             <div class="card" data-id="2" data-name="Шуруповёрт Makita" data-price="400">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
@@ -61,7 +82,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 3 -->
             <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
@@ -74,7 +94,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 4 -->
             <div class="card" data-id="4" data-name="Отбойный молоток" data-price="1500">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
@@ -87,7 +106,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 5 -->
             <div class="card" data-id="5" data-name="УШМ (Болгарка)" data-price="500">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
@@ -100,12 +118,11 @@
                 </div>
             </div>
 
-            <!-- Карточка 6 -->
             <div class="card" data-id="6" data-name="Плиткорез" data-price="700">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
                     <h3>Плиткорез</h3>
-                    <p>Ручной, 800 мм. Ровный рез керамической плитки и керамогранита.</p>
+                    <p>Ручной, 800 мм. Ровный рез керамической плитки.</p>
                     <div class="card-bottom">
                         <span class="price">700 ₽ / день</span>
                         <button class="add-btn">В заявку</button>
@@ -113,12 +130,11 @@
                 </div>
             </div>
 
-            <!-- Карточка 7 -->
             <div class="card" data-id="7" data-name="Лазерный уровень" data-price="600">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
                     <h3>Лазерный уровень</h3>
-                    <p>Построение плоскостей 360°. Идеален для плитки и гипсокартона.</p>
+                    <p>Построение плоскостей 360°. Идеален для плитки.</p>
                     <div class="card-bottom">
                         <span class="price">600 ₽ / день</span>
                         <button class="add-btn">В заявку</button>
@@ -126,12 +142,11 @@
                 </div>
             </div>
 
-            <!-- Карточка 8 -->
             <div class="card" data-id="8" data-name="Компрессор" data-price="900">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
                 <div class="card-body">
                     <h3>Компрессор</h3>
-                    <p>50 литров. Для работы с краскопультом и пневмоинструментом.</p>
+                    <p>50 литров. Для работы с краскопультом.</p>
                     <div class="card-bottom">
                         <span class="price">900 ₽ / день</span>
                         <button class="add-btn">В заявку</button>
@@ -141,12 +156,33 @@
         </div>
     </section>
 
+    <!-- Как это работает -->
+    <section id="how" class="how-it-works">
+        <h2>Как это работает</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Выбираете инструмент</h3>
+                <p>Добавляете нужное оборудование в заявку.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>Оставляете заявку</h3>
+                <p>Указываете даты и контакты для связи.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Мы связываемся с вами</h3>
+                <p>Подтверждаем наличие и обсуждаем доставку.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Заявка и Форма -->
     <section id="order" class="order-section">
         <h2>Оформление заявки</h2>
         
         <div class="order-container">
-            <!-- Корзина -->
             <div class="order-cart">
                 <h3>Выбранный инструмент</h3>
                 <div id="cart-empty">Вы пока ничего не выбрали.</div>
@@ -154,18 +190,14 @@
                 <div id="cart-total"></div>
             </div>
 
-            <!-- Форма -->
             <form id="order-form" class="order-form">
                 <h3>Ваши контакты</h3>
-                
                 <label>Ваше имя
                     <input type="text" name="name" placeholder="Иван Иванов" required>
                 </label>
-
                 <label>Телефон
                     <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required>
                 </label>
-
                 <div class="form-row">
                     <label>Дата начала
                         <input type="date" name="date_from" required>
@@ -174,14 +206,29 @@
                         <input type="date" name="date_to" required>
                     </label>
                 </div>
-
-                <label>Комментарий (необязательно)
+                <label>Комментарий
                     <textarea name="comment" rows="2" placeholder="Адрес доставки или пожелания..."></textarea>
                 </label>
-
                 <button type="submit">Отправить заявку</button>
                 <div id="form-status"></div>
             </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <h2>Условия аренды и вопросы</h2>
+        <div class="faq-item">
+            <h3>Нужен ли залог?</h3>
+            <p>Да, залоговая сумма обсуждается индивидуально при подтверждении заявки.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Есть ли доставка?</h3>
+            <p>Доставка возможна по договоренности. Стоимость зависит от адреса.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Можно ли продлить аренду?</h3>
+            <p>Да, при наличии инструмента на складе. Свяжитесь с нами до окончания срока.</p>
         </div>
     </section>
 
