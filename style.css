@@ -186,7 +186,7 @@ a {
 
 .feature-item p {
     font-size: 14px;
-    color: #64748b;
+    color: #475569; /* Улучшен контраст */
 }
 
 /* --- Каталог --- */
@@ -206,7 +206,7 @@ a {
 
 .subtitle {
     text-align: center;
-    color: #64748b;
+    color: #475569;
     font-size: 18px;
     margin-bottom: 50px;
 }
@@ -265,7 +265,7 @@ a {
 
 .card p {
     font-size: 15px;
-    color: #64748b;
+    color: #475569;
     margin-bottom: 25px;
     flex-grow: 1;
 }
@@ -317,7 +317,6 @@ a {
     position: relative;
 }
 
-/* Линия между шагами */
 .steps::before {
     content: '';
     position: absolute;
@@ -364,7 +363,7 @@ a {
 }
 
 .step p {
-    color: #64748b;
+    color: #475569;
     font-size: 15px;
 }
 
@@ -398,7 +397,7 @@ a {
 }
 
 #cart-empty {
-    color: #94a3b8;
+    color: #475569; /* Улучшен контраст */
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -420,7 +419,7 @@ a {
 #cart-list button {
     background: #fef2f2;
     border: none;
-    color: #ef4444;
+    color: #b91c1c; /* Улучшен контраст */
     padding: 6px 12px;
     border-radius: 6px;
     font-weight: 600;
@@ -566,7 +565,7 @@ form button[type="submit"]:hover {
 }
 
 .footer-col p {
-    color: #94a3b8;
+    color: #cbd5e1; /* Улучшен контраст на темном фоне */
     font-size: 16px;
     margin-bottom: 12px;
 }
@@ -595,4 +594,33 @@ form button[type="submit"]:hover {
     .header-contact { align-items: center; }
     .form-row { flex-direction: column; gap: 0; }
     .features { margin-top: -50px; }
+}
+
+/* Фикс для очень узких экранов (iPhone SE и т.д.) */
+@media (max-width: 360px) {
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+    .catalog-section {
+        padding: 40px 15px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+/* Уважаем настройку "уменьшить движение" */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        transition: none !important;
+    }
+    .card:hover {
+        transform: none !important;
+    }
+    .hero-btn:hover {
+        transform: none !important;
+    }
 }

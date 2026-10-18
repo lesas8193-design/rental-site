@@ -14,7 +14,7 @@
     <!-- Шапка -->
     <header class="site-header">
         <div class="logo">Прокат<span>Тех</span></div>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Основное меню">
             <a href="#catalog">Каталог</a>
             <a href="#how">Как это работает</a>
             <a href="#faq">Вопросы</a>
@@ -37,17 +37,17 @@
     <!-- Блок преимуществ -->
     <section class="features reveal">
         <div class="feature-item">
-            <div class="feature-icon">🚚</div>
+            <div class="feature-icon" aria-hidden="true">🚚</div>
             <h3>Доставка на объект</h3>
             <p>Привезем инструмент прямо к месту работы. *Демонстрационное преимущество</p>
         </div>
         <div class="feature-item">
-            <div class="feature-icon">🛠️</div>
+            <div class="feature-icon" aria-hidden="true">🛠️</div>
             <h3>Проверенное качество</h3>
             <p>Вся техника проходит регулярное ТО перед выдачей. *Демонстрационное преимущество</p>
         </div>
         <div class="feature-item">
-            <div class="feature-icon">📅</div>
+            <div class="feature-icon" aria-hidden="true">📅</div>
             <h3>Гибкие сроки</h3>
             <p>Арендуйте от одного дня до нескольких месяцев. *Демонстрационное преимущество</p>
         </div>
@@ -62,14 +62,14 @@
             <!-- Товар 1 -->
             <div class="card" data-id="1" data-name="Перфоратор Bosch" data-price="800">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Перфоратор Bosch" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Перфоратор Bosch</h3>
                     <p>Мощный инструмент для бетона. В комплекте буры и кейс.</p>
                     <div class="card-bottom">
                         <span class="price">800 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Перфоратор Bosch в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -77,14 +77,14 @@
             <!-- Товар 2 -->
             <div class="card" data-id="2" data-name="Шуруповёрт Makita" data-price="400">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Шуруповёрт Makita" style="background-image: url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Шуруповёрт Makita</h3>
                     <p>Аккумуляторный, два режима. Для сборки мебели и монтажа.</p>
                     <div class="card-bottom">
                         <span class="price">400 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Шуруповёрт Makita в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -92,14 +92,14 @@
             <!-- Товар 3 -->
             <div class="card" data-id="3" data-name="Бетономешалка" data-price="1200">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Бетономешалка" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Бетономешалка</h3>
                     <p>Объём 140 литров. Для замеса раствора на стройплощадке.</p>
                     <div class="card-bottom">
                         <span class="price">1200 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Бетономешалку в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -107,14 +107,14 @@
             <!-- Товар 4 -->
             <div class="card" data-id="4" data-name="Отбойный молоток" data-price="1500">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Отбойный молоток" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Отбойный молоток</h3>
                     <p>Электрический. Для демонтажа стен и старой плитки.</p>
                     <div class="card-bottom">
                         <span class="price">1500 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Отбойный молоток в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -122,14 +122,14 @@
             <!-- Товар 5 -->
             <div class="card" data-id="5" data-name="УШМ (Болгарка)" data-price="500">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="УШМ (Болгарка)" style="background-image: url('https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>УШМ (Болгарка)</h3>
                     <p>Диск 230 мм. Для резки металла и шлифовки поверхностей.</p>
                     <div class="card-bottom">
                         <span class="price">500 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить УШМ (Болгарку) в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -137,14 +137,14 @@
             <!-- Товар 6 -->
             <div class="card" data-id="6" data-name="Плиткорез" data-price="700">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Плиткорез" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356f11?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Плиткорез</h3>
                     <p>Ручной, 800 мм. Ровный рез керамической плитки.</p>
                     <div class="card-bottom">
                         <span class="price">700 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Плиткорез в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -152,14 +152,14 @@
             <!-- Товар 7 -->
             <div class="card" data-id="7" data-name="Лазерный уровень" data-price="600">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Лазерный уровень" style="background-image: url('https://images.unsplash.com/photo-1541888087425-ce81df18b774?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Лазерный уровень</h3>
                     <p>Построение плоскостей 360°. Идеален для плитки.</p>
                     <div class="card-bottom">
                         <span class="price">600 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Лазерный уровень в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -167,14 +167,14 @@
             <!-- Товар 8 -->
             <div class="card" data-id="8" data-name="Компрессор" data-price="900">
                 <div class="card-img-wrapper">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="card-img" role="img" aria-label="Компрессор" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop');"></div>
                 </div>
                 <div class="card-body">
                     <h3>Компрессор</h3>
                     <p>50 литров. Для работы с краскопультом.</p>
                     <div class="card-bottom">
                         <span class="price">900 ₽ / день</span>
-                        <button class="add-btn">В заявку</button>
+                        <button class="add-btn" aria-label="Добавить Компрессор в заявку">В заявку</button>
                     </div>
                 </div>
             </div>
@@ -186,17 +186,17 @@
         <h2>Как это работает</h2>
         <div class="steps">
             <div class="step">
-                <div class="step-num">1</div>
+                <div class="step-num" aria-hidden="true">1</div>
                 <h3>Выбираете инструмент</h3>
                 <p>Добавляете нужное оборудование в заявку.</p>
             </div>
             <div class="step">
-                <div class="step-num">2</div>
+                <div class="step-num" aria-hidden="true">2</div>
                 <h3>Оставляете заявку</h3>
                 <p>Указываете даты и контакты для связи.</p>
             </div>
             <div class="step">
-                <div class="step-num">3</div>
+                <div class="step-num" aria-hidden="true">3</div>
                 <h3>Мы связываемся с вами</h3>
                 <p>Подтверждаем наличие и обсуждаем доставку.</p>
             </div>
@@ -211,7 +211,7 @@
             <div class="order-cart">
                 <h3>Выбранный инструмент</h3>
                 <div id="cart-empty">Вы пока ничего не выбрали.</div>
-                <ul id="cart-list"></ul>
+                <ul id="cart-list" aria-live="polite"></ul>
                 <div id="cart-total"></div>
             </div>
 
@@ -235,7 +235,7 @@
                     <textarea name="comment" rows="2" placeholder="Адрес доставки или пожелания..."></textarea>
                 </label>
                 <button type="submit">Отправить заявку</button>
-                <div id="form-status"></div>
+                <div id="form-status" aria-live="polite"></div>
             </form>
         </div>
     </section>
